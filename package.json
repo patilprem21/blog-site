@@ -1,0 +1,30 @@
+{
+  "name": "blog-site",
+  "version": "1.0.0",
+  "description": "A modern, minimalist blog site built with Next.js for data science and ML content sharing. Features a clean design with dark charcoal and bright yellow color scheme, mobile-first responsive layout, and markdown-based content management.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@next/mdx": "^16.0.0",
+    "date-fns": "^4.1.0",
+    "gray-matter": "^4.0.3",
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.15"
+  }
+}

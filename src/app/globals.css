@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-charcoal font-professional;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-tech;
+  }
+  
+  code {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-yellow text-charcoal px-6 py-3 rounded-lg font-semibold hover:bg-yellow/90 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-charcoal text-charcoal px-6 py-3 rounded-lg font-semibold hover:bg-charcoal hover:text-white transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .tech-text {
+    @apply font-tech text-charcoal;
+  }
+  
+  .professional-text {
+    @apply font-professional text-gray-700;
+  }
+}
