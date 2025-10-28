@@ -32,20 +32,22 @@ export default function Home() {
       <section className="pt-20 pb-12 px-4 sm:pt-24 sm:pb-16 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 sm:mb-8">
-            <div className="mx-auto w-32 h-32 sm:w-48 sm:h-48 rounded-full border-4 border-yellow shadow-2xl bg-gradient-to-br from-charcoal to-gray-600 flex items-center justify-center">
-              <div className="text-yellow text-3xl sm:text-6xl font-tech font-black">DS</div>
-            </div>
+            <Image
+              src="/images/WhatsApp Image 2024-07-13 at 12.13.37 PM.jpeg"
+              alt="Profile Picture"
+              width={384}
+              height={384}
+              className="mx-auto w-32 h-32 sm:w-48 sm:h-48 rounded-full border-4 border-yellow shadow-2xl"
+              priority
+            />
           </div>
           
           <h1 className="tech-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 leading-tight">
-            Welcome to My
-            <span className="block text-yellow mt-1 sm:mt-2">Data Science</span>
-            <span className="block">Journey</span>
+            Data Science Blog
           </h1>
           
           <p className="professional-text text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
-            Exploring the fascinating world of machine learning, data analysis, and AI. 
-            Sharing insights, tutorials, and project experiences.
+            Projects, notes, and tutorials on machine learning, data analysis, and AI.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
