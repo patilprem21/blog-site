@@ -1,60 +1,40 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-white to-gray-50">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
-          <div className="flex justify-between items-center">
-            <div className="tech-text text-xl sm:text-2xl font-bold">
-              DataScience<span className="text-yellow">Blog</span>
-            </div>
-            <div className="hidden sm:flex space-x-6 lg:space-x-8">
-              <Link href="/" className="professional-text hover:text-yellow transition-colors text-sm sm:text-base">Home</Link>
-              <Link href="/about" className="professional-text hover:text-yellow transition-colors text-sm sm:text-base">About</Link>
-              <Link href="/blog" className="professional-text hover:text-yellow transition-colors text-sm sm:text-base">Blog</Link>
-            </div>
-            {/* Mobile menu button - you can add this later */}
-            <div className="sm:hidden">
-              <button className="text-charcoal hover:text-yellow transition-colors">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-12 px-4 sm:pt-24 sm:pb-16 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6 sm:mb-8">
+      <section className="pt-32 pb-16 px-4 sm:pt-36 sm:pb-20 sm:px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="mb-8 sm:mb-12">
             <Image
               src="/images/WhatsApp Image 2024-07-13 at 12.13.37 PM.jpeg"
               alt="Profile Picture"
-              width={384}
-              height={384}
-              className="mx-auto w-32 h-32 sm:w-48 sm:h-48 rounded-full border-4 border-yellow shadow-2xl"
+              width={200}
+              height={200}
+              className="mx-auto w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-yellow shadow-2xl object-cover"
               priority
             />
           </div>
           
-          <h1 className="tech-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 leading-tight">
+          <h1 className="tech-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 sm:mb-8 leading-tight">
             Data Science Blog
           </h1>
           
-          <p className="professional-text text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="professional-text text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
             Projects, notes, and tutorials on machine learning, data analysis, and AI.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Link href="/blog" className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+            <Link href="/blog" className="btn-primary text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 w-full sm:w-auto">
               Read My Blog
             </Link>
-            <Link href="/about" className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
+            <Link href="/about" className="btn-secondary text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 w-full sm:w-auto">
               Learn More
             </Link>
           </div>
